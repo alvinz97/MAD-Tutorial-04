@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/userNameLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000"
+            android:text="@string/userName"
+            android:textSize="22dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/userNameInput"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:hint="@string/userNameInput"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/userNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000"
+            android:text="@string/pass"
+            android:textSize="22dp" />
+        <EditText
+            android:id="@+id/passInput"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/passInput"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectAllButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordLayout"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/selectAllBtn"
+            android:layout_width="wrap_content"
+            android:text="@string/selectAllBtn"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonGroupLayoutRow1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/selectAllButtonLayout"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:text="@string/addBtn"
+            android:layout_marginLeft="85dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="wrap_content"
+            android:text="@string/signInBtn"
+            android:layout_marginLeft="60dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonGroupLayoutRow2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/buttonGroupLayoutRow1"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:text="@string/deleteBtn"
+            android:layout_marginLeft="85dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/updateInBtn"
+            android:layout_width="wrap_content"
+            android:text="@string/updateInBtn"
+            android:layout_marginLeft="60dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

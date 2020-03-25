@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tutorial04</string>
+    <string name="userName">User Name</string>
+    <string name="userNameInput">Enter User Name</string>
+    <string name="pass">Password</string>
+    <string name="passInput">Enter Password</string>
+    <string name="selectAllBtn">Select All</string>
+    <string name="addBtn">Add</string>
+    <string name="signInBtn">Sign In</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="updateInBtn">Update</string>
+</resources>
